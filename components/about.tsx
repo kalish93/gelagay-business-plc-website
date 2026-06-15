@@ -14,13 +14,13 @@ const commitments = [
   {
     title: 'Mission',
     description:
-      'Deliver dependable water testing, technical training, lab support, and advisory services that help Ethiopian facilities operate with confidence.',
+      'Deliver dependable water testing, laboratory supply, technical training, and advisory services that help Ethiopian facilities operate with confidence.',
     icon: Target,
   },
   {
     title: 'Vision',
     description:
-      "Become one of East Africa's most trusted technical service and advisory partners for water systems, laboratories, and industrial operations.",
+      "Become one of East Africa's most trusted technical service and laboratory support partners for water systems, laboratories, and industrial operations.",
     icon: Eye,
   },
   {
@@ -77,12 +77,12 @@ export function About() {
               About Gelagay
             </span>
             <h2 className="text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
-              A dependable technical service and advisory partner for Ethiopian facilities.
+              A dependable water testing and laboratory support partner for Ethiopian facilities.
             </h2>
             <p className="text-base leading-7 text-muted-foreground sm:text-lg">
               Gelagay Business PLC supports industrial facilities, laboratories, water
-              treatment teams, and commercial customers through water testing, operator
-              training, technical services, testing kits, lab equipment, and reagents. When
+              treatment teams, and commercial customers through water testing, technical
+              training, testing kits, laboratory equipment, reagents, and advisory services. When
               projects require it, Gelagay can also discreetly support sourcing of water
               treatment inputs and related technical materials.
             </p>

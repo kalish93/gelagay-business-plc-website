@@ -31,31 +31,31 @@ export const navItems = [
 
 export const products = [
   {
-    title: 'Industrial Water Testing',
+    title: 'Water Testing & Analysis',
     description:
       'On-site and laboratory-supported testing for boiler, cooling tower, softener, RO, and wastewater systems.',
     icon: Droplets,
     accent: 'blue',
   },
   {
-    title: 'Training & Technical Services',
+    title: 'Lab Equipment & Reagents',
     description:
-      'Practical training and technical guidance for operators, maintenance teams, and facility managers.',
-    icon: BookOpen,
+      'Laboratory equipment, reagents, consumables, and support inputs for testing, research, and quality control work.',
+    icon: FlaskConical,
     accent: 'gold',
+  },
+  {
+    title: 'Technical Training & Services',
+    description:
+      'Practical training and technical guidance for operators, lab teams, maintenance teams, and facility managers.',
+    icon: BookOpen,
+    accent: 'green',
   },
   {
     title: 'Water Testing Kits',
     description:
       'Testing kits and field-ready tools for routine water quality checks and operational monitoring.',
     icon: ClipboardCheck,
-    accent: 'green',
-  },
-  {
-    title: 'Lab Equipment & Reagents',
-    description:
-      'Laboratory equipment, reagents, consumables, and support inputs for testing and quality control work.',
-    icon: FlaskConical,
     accent: 'blue',
   },
   {
@@ -88,18 +88,20 @@ export const focusAreas = [
   'Reverse osmosis',
   'Wastewater',
   'Testing kits',
-  'Lab equipment and reagents',
+  'Lab equipment',
+  'Laboratory reagents',
+  'Quality control labs',
 ];
 
 export const features = [
   {
     title: 'Reliable Technical Service',
-    description: 'Testing, guidance, and support are delivered with clear documentation and practical follow-up.',
+    description: 'Water testing, lab support, guidance, and follow-up are delivered with clear documentation.',
     icon: Award,
   },
   {
-    title: 'Water System Know-How',
-    description: 'Focused support for boiler, cooling, softener, RO, and wastewater operations.',
+    title: 'Water & Laboratory Know-How',
+    description: 'Focused support for utility water systems, testing routines, lab equipment, and reagents.',
     icon: PackageCheck,
   },
   {
@@ -222,12 +224,12 @@ export const faqs = [
   {
     question: 'What does Gelagay currently focus on?',
     answer:
-      'Gelagay currently focuses on industrial water testing, operator training, technical services, water testing kits, lab equipment, and reagents.',
+      'Gelagay currently focuses on two connected areas: industrial water testing and technical services, plus laboratory equipment, reagents, and testing kits.',
   },
   {
     question: 'Do you provide training and technical support?',
     answer:
-      'Yes. Gelagay can support teams working with boiler water, cooling towers, softeners, RO systems, wastewater, testing routines, and safe material use.',
+      'Yes. Gelagay can support teams working with boiler water, cooling towers, softeners, RO systems, wastewater, lab testing routines, reagents, and safe material use.',
   },
   {
     question: 'Can you help identify the right test kit or reagent?',

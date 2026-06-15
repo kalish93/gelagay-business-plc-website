@@ -13,9 +13,9 @@ import { Footer } from '@/components/footer';
 import { ScrollToTop } from '@/components/scroll-to-top';
 
 export const metadata = {
-  title: 'Gelagay Business PLC | Water Testing & Technical Services',
+  title: 'Gelagay Business PLC | Water Testing & Laboratory Support',
   description:
-    'Water testing, training, technical services, testing kits, lab equipment, and reagents for industrial and laboratory customers in Ethiopia.',
+    'Water testing, laboratory equipment, reagents, testing kits, training, and technical services for industrial and laboratory customers in Ethiopia.',
   keywords:
     'water testing Ethiopia, boiler water testing, cooling tower service, RO technical service, wastewater testing, testing kits, lab equipment, reagents',
 };

@@ -25,8 +25,8 @@ export function Footer() {
               </div>
             </div>
             <p className="max-w-sm text-sm leading-6 text-white/75">
-              Water testing, training, technical services, testing kits, lab equipment, and
-              reagents for Ethiopian facilities and laboratories.
+              Water testing, laboratory equipment, reagents, testing kits, training, and
+              technical services for Ethiopian facilities and laboratories.
             </p>
             <div className="mt-5 flex gap-3">
               {socialLinks.map((social) => {

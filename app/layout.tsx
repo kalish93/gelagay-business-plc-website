@@ -4,9 +4,9 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gelagay.com'),
-  title: 'Gelagay Business PLC | Water Testing, Training & Technical Services',
+  title: 'Gelagay Business PLC | Water Testing & Laboratory Support',
   description:
-    'Industrial water testing, training, technical services, testing kits, lab equipment, and reagents for boiler, cooling tower, softener, RO, and wastewater systems.',
+    'Industrial water testing, laboratory equipment, reagents, testing kits, training, and technical services for water systems and laboratory operations.',
   keywords: [
     'Gelagay Business PLC',
     'water testing Ethiopia',
@@ -18,11 +18,12 @@ export const metadata: Metadata = {
     'lab equipment Ethiopia',
     'laboratory reagents Ethiopia',
     'technical training Ethiopia',
+    'quality control lab equipment',
   ],
   openGraph: {
-    title: 'Gelagay Business PLC | Water Testing, Training & Technical Services',
+    title: 'Gelagay Business PLC | Water Testing & Laboratory Support',
     description:
-      'Technical water services, testing kits, lab equipment, reagents, training, and advisory support for Ethiopian facilities.',
+      'Water testing services, testing kits, laboratory equipment, reagents, training, and technical support for Ethiopian facilities.',
     images: ['/hero.png'],
     locale: 'en_US',
     siteName: 'Gelagay Business PLC',

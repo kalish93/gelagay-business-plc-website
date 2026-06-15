@@ -39,11 +39,11 @@ export function FaqNewsletter() {
         >
           <p className="text-sm font-semibold uppercase text-secondary">Stay informed</p>
           <h2 className="mt-3 text-3xl font-bold leading-tight">
-            Water testing and technical service updates.
+            Water testing and laboratory support updates.
           </h2>
           <p className="mt-4 text-sm leading-6 text-white/75">
             Receive service notes, testing reminders, training updates, advisory insights, and
-            availability updates for kits, lab equipment, and reagents.
+            availability updates for testing kits, lab equipment, and reagents.
           </p>
 
           <form className="mt-6 grid gap-3 sm:grid-cols-[1fr_auto]" onSubmit={handleSubscribe}>

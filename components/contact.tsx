@@ -30,9 +30,9 @@ export function Contact() {
     <section id="contact" className="bg-background px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
-          description="Tell us the water system, test requirement, kit, reagent, lab equipment, or training support you need."
+          description="Tell us the water system, lab equipment, reagent, testing kit, test requirement, or training support you need."
           eyebrow={sectionEyebrows.contact}
-          title="Start a technical service conversation."
+          title="Start a water or laboratory support conversation."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[0.86fr_1.14fr]">
@@ -149,7 +149,7 @@ export function Contact() {
               <textarea
                 className="min-h-36 resize-none rounded-lg border border-border bg-background px-3 py-3 text-sm outline-none transition focus:border-primary focus:ring-3 focus:ring-primary/15"
                 name="message"
-                placeholder="Water system, test parameters, kit/reagent need, lab equipment, training request, location, and timeline."
+                placeholder="Water system, lab equipment, reagent, testing kit, test parameters, training request, location, and timeline."
                 required
               />
             </label>

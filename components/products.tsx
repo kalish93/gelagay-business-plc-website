@@ -34,9 +34,9 @@ export function Products() {
     <section id="products" className="bg-muted/40 px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
-          description="Focused technical support for facilities that need water testing, operator training, lab inputs, and practical service guidance."
+          description="Balanced support for facilities that need industrial water testing, technical training, laboratory equipment, reagents, testing kits, and practical guidance."
           eyebrow={sectionEyebrows.products}
-          title="Technical services for water systems, testing, and laboratories."
+          title="Technical solutions for water systems and laboratory operations."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -92,8 +92,8 @@ export function Products() {
             <div>
               <h3 className="text-lg font-bold text-foreground">Current technical focus areas</h3>
               <p className="mt-1 text-sm leading-6 text-muted-foreground">
-                These are the core areas Gelagay supports today while keeping room for other
-                technical and business sectors later.
+                Gelagay gives balanced attention to water system support and laboratory
+                equipment, reagents, kits, and testing workflows.
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -119,8 +119,8 @@ export function Products() {
           <div>
             <h3 className="text-lg font-bold text-foreground">Need technical advice before deciding?</h3>
             <p className="mt-1 text-sm leading-6 text-muted-foreground">
-              Share your system type, test requirements, current challenge, and timeline. Gelagay
-              can help plan testing, training, documentation, kits, reagents, and support inputs.
+              Share your system type, lab requirement, test parameters, equipment or reagent
+              need, current challenge, and timeline. Gelagay can help plan the next step.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[520px]">

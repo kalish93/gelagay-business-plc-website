@@ -18,7 +18,7 @@ export function Hero() {
       className="relative flex min-h-[92svh] items-end overflow-hidden bg-[#0A2342] px-4 pb-10 pt-28 text-white sm:px-6 lg:px-8"
     >
       <Image
-        alt="Water testing, laboratory equipment, and industrial technical service operations"
+        alt="Water testing, laboratory equipment, reagents, and industrial technical service operations"
         className="object-cover"
         fill
         priority
@@ -53,12 +53,12 @@ export function Hero() {
             Gelagay Business PLC
           </h1>
           <p className="mt-6 max-w-3xl text-2xl font-semibold leading-tight text-white sm:text-3xl">
-            Industrial Water Testing, Training, and Technical Services for Reliable Operations
+            Water Testing, Laboratory Equipment, Reagents, and Technical Services
           </p>
           <p className="mt-5 max-w-2xl text-base leading-7 text-white/80 sm:text-lg">
-            Gelagay supports boiler, cooling tower, softener, RO, and wastewater systems
-            with testing services, training, testing kits, lab equipment, reagents, and
-            practical technical guidance.
+            Gelagay supports industrial water systems and laboratory operations with testing
+            services, technical training, water testing kits, lab equipment, reagents, and
+            practical guidance.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -87,8 +87,8 @@ export function Hero() {
         >
           {[
             { label: 'Water testing services', icon: ClipboardCheck },
-            { label: 'Operator training', icon: ShieldCheck },
-            { label: 'Kits, lab equipment and reagents', icon: Beaker },
+            { label: 'Lab equipment and reagents', icon: Beaker },
+            { label: 'Training and technical support', icon: ShieldCheck },
           ].map((item) => {
             const Icon = item.icon;
 
