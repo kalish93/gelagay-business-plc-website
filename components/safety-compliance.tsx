@@ -24,9 +24,9 @@ export function SafetyCompliance() {
           >
             <SectionHeading
               align="left"
-              description="Chemical supply requires discipline. Gelagay presents products with clear handling expectations, documentation practices, and customer support that reduce procurement risk."
+              description="Chemical supply and business sourcing both require disciplined decisions. Gelagay combines supply coordination with practical consultation so customers can choose, store, handle, and apply products more confidently."
               eyebrow={sectionEyebrows.safety}
-              title="Quality, safe handling, and compliance are part of the supply process."
+              title="Advisory support is part of the supply process."
             />
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button className="h-11 gap-2 px-5" onClick={() => scrollToSection('#contact')}>
@@ -38,7 +38,7 @@ export function SafetyCompliance() {
                 onClick={() => scrollToSection('#products')}
                 variant="outline"
               >
-                Review Products
+                Review Solutions
               </Button>
             </div>
           </motion.div>

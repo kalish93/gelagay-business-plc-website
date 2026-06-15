@@ -25,8 +25,8 @@ export function Footer() {
               </div>
             </div>
             <p className="max-w-sm text-sm leading-6 text-white/75">
-              Trusted chemical supply solutions for industrial, laboratory, agricultural, and
-              commercial customers across Ethiopia.
+              Business supply, distribution, sourcing, and advisory solutions for Ethiopian
+              companies, with current specialization in chemicals.
             </p>
             <div className="mt-5 flex gap-3">
               {socialLinks.map((social) => {
@@ -60,7 +60,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold text-secondary">Product Categories</h3>
+            <h3 className="font-semibold text-secondary">Solutions</h3>
             <ul className="mt-4 space-y-2 text-sm">
               {products.slice(0, 5).map((product) => (
                 <li key={product.title}>

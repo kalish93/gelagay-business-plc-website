@@ -1,6 +1,5 @@
 import {
   Award,
-  Beaker,
   BookOpen,
   Building2,
   CheckCircle2,
@@ -11,14 +10,14 @@ import {
   FlaskConical,
   Handshake,
   HeartPulse,
+  Lightbulb,
   Leaf,
   Mail,
   MapPin,
   PackageCheck,
   Phone,
   ShieldCheck,
-  Sparkles,
-  Sprout,
+  Target,
   Truck,
   Utensils,
   Warehouse,
@@ -28,7 +27,7 @@ import {
 export const navItems = [
   { label: 'Home', href: '#hero' },
   { label: 'About', href: '#about' },
-  { label: 'Products', href: '#products' },
+  { label: 'Solutions', href: '#products' },
   { label: 'Safety', href: '#safety' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: '#contact' },
@@ -36,60 +35,70 @@ export const navItems = [
 
 export const products = [
   {
-    title: 'Industrial Chemicals',
+    title: 'Chemical Supply & Distribution',
     description:
-      'Process chemicals, solvents, acids, alkalis, and specialty inputs for manufacturing and production lines.',
+      'Industrial, laboratory, agricultural, water treatment, cleaning, and commercial chemicals supplied with dependable coordination.',
     icon: Factory,
     accent: 'navy',
   },
   {
-    title: 'Laboratory Chemicals',
+    title: 'Chemical Use Advisory & Consultation',
     description:
-      'Reliable reagents, analytical-grade chemicals, glassware support, and consumables for quality control labs.',
-    icon: Beaker,
+      'Practical guidance for product selection, safe use, storage, handling, application planning, and documentation needs.',
+    icon: Lightbulb,
     accent: 'gold',
   },
   {
-    title: 'Agricultural Chemicals',
+    title: 'Import, Sourcing & Procurement',
     description:
-      'Fertilizer inputs, crop-support chemicals, soil treatment products, and farm supply coordination.',
-    icon: Sprout,
+      'Supplier coordination, sourcing support, import planning, and procurement assistance for specialized business inputs.',
+    icon: PackageCheck,
     accent: 'green',
   },
   {
-    title: 'Water Treatment Chemicals',
+    title: 'Technical Documentation Support',
     description:
-      'Coagulants, disinfectants, pH control chemicals, and treatment supplies for safe water operations.',
-    icon: Droplets,
+      'Support with specifications, safety data sheets, handling guidance, batch records, and compliance-minded documentation.',
+    icon: ClipboardCheck,
     accent: 'blue',
   },
   {
-    title: 'Cleaning & Sanitizing Chemicals',
+    title: 'Logistics & Business Support',
     description:
-      'Commercial detergents, sanitizers, degreasers, and hygiene products for high-traffic facilities.',
-    icon: Sparkles,
+      'Warehousing coordination, delivery planning, repeat-order scheduling, and distribution support across Ethiopian regions.',
+    icon: Truck,
     accent: 'gold',
   },
   {
-    title: 'Chemical Distribution & Logistics',
+    title: 'Bulk Supply Programs',
     description:
-      'Reliable sourcing, warehousing, documentation, and coordinated delivery across Ethiopian regions.',
-    icon: Truck,
+      'Volume supply, contract planning, packaging coordination, and predictable replenishment for business customers.',
+    icon: Warehouse,
     accent: 'navy',
   },
   {
-    title: 'Bulk Chemical Supply',
+    title: 'Future Sector Partnerships',
     description:
-      'Volume procurement, repeat ordering programs, and contract supply planning for business customers.',
-    icon: Warehouse,
+      'A flexible platform for adding new supply, advisory, distribution, and commercial support services as Gelagay expands.',
+    icon: Target,
     accent: 'green',
   },
 ];
 
+export const chemicalCategories = [
+  'Industrial chemicals',
+  'Laboratory chemicals',
+  'Agricultural chemicals',
+  'Water treatment chemicals',
+  'Cleaning and sanitizing chemicals',
+  'Commercial chemical inputs',
+  'Bulk chemical supply',
+];
+
 export const features = [
   {
-    title: 'Certified Quality Products',
-    description: 'Products are sourced from vetted suppliers with documentation and batch traceability.',
+    title: 'Quality-Assured Supply',
+    description: 'Products and services are supported by vetted suppliers, clear documentation, and traceability.',
     icon: Award,
   },
   {
@@ -109,7 +118,7 @@ export const features = [
   },
   {
     title: 'Expert Support',
-    description: 'Product guidance, documentation support, and practical application recommendations.',
+    description: 'Chemical-use consultation, product guidance, documentation support, and practical application recommendations.',
     icon: ClipboardCheck,
   },
   {
@@ -138,7 +147,7 @@ export const complianceItems = [
   },
   {
     title: 'Safe Handling Procedures',
-    description: 'Storage guidance, labeling discipline, and handling practices are built into every order.',
+    description: 'Storage guidance, labeling discipline, consultation, and handling practices are built into every order.',
     icon: ShieldCheck,
   },
   {
@@ -184,7 +193,7 @@ export const testimonials = [
 ];
 
 export const stats = [
-  { value: 500, label: 'Products', symbol: '+' },
+  { value: 500, label: 'Products & Inputs', symbol: '+' },
   { value: 100, label: 'Business Clients', symbol: '+' },
   { value: 50, label: 'Partner Suppliers', symbol: '+' },
   { value: 10, label: 'Regions Served', symbol: '+' },
@@ -215,19 +224,24 @@ export const contactDetails = [
 
 export const faqs = [
   {
-    question: 'Do you supply chemicals in bulk quantities?',
+    question: 'Is Gelagay only a chemical supplier?',
     answer:
-      'Yes. Gelagay supports recurring and bulk supply programs for industrial, agricultural, laboratory, and commercial customers.',
+      'Chemicals are the current core specialization, but Gelagay is structured as a business supply, distribution, sourcing, and advisory company that can expand into additional sectors.',
+  },
+  {
+    question: 'Do you provide consultation for chemical use?',
+    answer:
+      'Yes. Gelagay can advise on product selection, safe handling, storage, application planning, documentation needs, and practical use considerations.',
   },
   {
     question: 'Can you help identify the right product for an application?',
     answer:
-      'Yes. Share the application, target volume, safety requirements, and delivery location, and our team will recommend suitable options.',
+      'Yes. Share the application, target volume, safety requirements, and delivery location, and our team will recommend suitable products or advisory next steps.',
   },
   {
-    question: 'Do products include documentation?',
+    question: 'Do products and services include documentation?',
     answer:
-      'Available documentation can include product specifications, safety data sheets, supplier records, and handling guidance depending on the product.',
+      'Available documentation can include specifications, safety data sheets, supplier records, handling guidance, and consultation notes depending on the request.',
   },
   {
     question: 'Which areas do you serve?',
@@ -262,10 +276,10 @@ export const accentClasses = {
 export const heroHighlights = ['Industrial', 'Laboratory', 'Agricultural', 'Commercial'];
 
 export const sectionEyebrows = {
-  products: 'Product portfolio',
-  why: 'Supply advantage',
+  products: 'Business solutions',
+  why: 'Partner advantage',
   industries: 'Industries served',
-  safety: 'Safety and compliance',
+  safety: 'Advisory, safety and compliance',
   testimonials: 'Client confidence',
-  contact: 'Request a quote',
+  contact: 'Contact Gelagay',
 };

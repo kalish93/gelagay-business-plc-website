@@ -14,7 +14,7 @@ export function WhyUs() {
             align="left"
             description="Business buyers need more than product availability. They need repeatable service, accountable sourcing, and responsive people."
             eyebrow={sectionEyebrows.why}
-            title="A supplier relationship designed for operational confidence."
+            title="A partner relationship designed for operational confidence."
           />
 
           <div className="grid gap-4 sm:grid-cols-2">
@@ -44,4 +44,3 @@ export function WhyUs() {
     </section>
   );
 }
-

@@ -18,7 +18,7 @@ export function Hero() {
       className="relative flex min-h-[92svh] items-end overflow-hidden bg-[#0A2342] px-4 pb-10 pt-28 text-white sm:px-6 lg:px-8"
     >
       <Image
-        alt="Chemical containers, laboratory equipment, and industrial supply operations"
+        alt="Business supply, chemical containers, laboratory equipment, and industrial operations"
         className="object-cover"
         fill
         priority
@@ -53,11 +53,12 @@ export function Hero() {
             Gelagay Business PLC
           </h1>
           <p className="mt-6 max-w-3xl text-2xl font-semibold leading-tight text-white sm:text-3xl">
-            Trusted Chemical Supply Solutions for Industry, Agriculture, and Business
+            Business Supply, Distribution, and Advisory Solutions for Ethiopia&apos;s Growing Industries
           </p>
           <p className="mt-5 max-w-2xl text-base leading-7 text-white/80 sm:text-lg">
-            Providing high-quality chemical products, accountable sourcing, and reliable
-            distribution services across Ethiopia.
+            Gelagay currently specializes in chemical supply and technical consultation,
+            while building a flexible platform for sourcing, distribution, and business
+            support across additional sectors.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -65,7 +66,7 @@ export function Hero() {
               className="h-12 gap-2 bg-secondary px-6 text-primary hover:bg-secondary/90"
               onClick={() => scrollToSection('#contact')}
             >
-              Request a Quote
+              Contact Us
               <ArrowRight className="h-4 w-4" />
             </Button>
             <Button
@@ -73,7 +74,7 @@ export function Hero() {
               onClick={() => scrollToSection('#products')}
               variant="outline"
             >
-              View Products
+              Explore Solutions
             </Button>
           </div>
         </motion.div>
@@ -85,9 +86,9 @@ export function Hero() {
           transition={{ delay: 0.25, duration: 0.6 }}
         >
           {[
-            { label: 'Documented product quality', icon: ClipboardCheck },
-            { label: 'Safe handling guidance', icon: ShieldCheck },
-            { label: 'Lab and industrial coverage', icon: Beaker },
+            { label: 'Supply and distribution', icon: ClipboardCheck },
+            { label: 'Chemical-use advisory', icon: ShieldCheck },
+            { label: 'Expandable sector focus', icon: Beaker },
           ].map((item) => {
             const Icon = item.icon;
 

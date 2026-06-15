@@ -5,15 +5,20 @@ import { ArrowRight, FileCheck2, PackageSearch, Truck } from 'lucide-react';
 import { useState } from 'react';
 
 import { InquiryModal } from '@/components/inquiry-modal';
-import { accentClasses, products, sectionEyebrows } from '@/components/landing-data';
+import {
+  accentClasses,
+  chemicalCategories,
+  products,
+  sectionEyebrows,
+} from '@/components/landing-data';
 import { SectionHeading } from '@/components/section-heading';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 const workflow = [
-  { label: 'Product match', icon: PackageSearch },
+  { label: 'Needs assessment', icon: PackageSearch },
   { label: 'Documentation', icon: FileCheck2 },
-  { label: 'Delivery plan', icon: Truck },
+  { label: 'Supply plan', icon: Truck },
 ];
 
 export function Products() {
@@ -29,9 +34,9 @@ export function Products() {
     <section id="products" className="bg-muted/40 px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
-          description="A practical portfolio for companies that need dependable sourcing, documentation, and distribution support."
+          description="A future-ready services structure for companies that need dependable sourcing, documentation, advisory support, and distribution."
           eyebrow={sectionEyebrows.products}
-          title="Products and services built around business continuity."
+          title="Solutions built around supply, advisory, and business continuity."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -56,7 +61,7 @@ export function Products() {
                     <Icon className={cn('h-6 w-6', accent.icon)} />
                   </div>
                   <span className="rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-                    Supply ready
+                    Solution ready
                   </span>
                 </div>
 
@@ -77,6 +82,34 @@ export function Products() {
         </div>
 
         <motion.div
+          className="mt-8 rounded-lg border border-border bg-background p-5 shadow-sm"
+          initial={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.45 }}
+          viewport={{ once: true }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
+          <div className="grid gap-4 lg:grid-cols-[0.65fr_1.35fr] lg:items-center">
+            <div>
+              <h3 className="text-lg font-bold text-foreground">Current chemical focus areas</h3>
+              <p className="mt-1 text-sm leading-6 text-muted-foreground">
+                These are the core categories Gelagay supports today while the company prepares
+                for broader business sectors.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {chemicalCategories.map((category) => (
+                <span
+                  className="rounded-full border border-border bg-muted/60 px-3 py-2 text-xs font-semibold text-foreground"
+                  key={category}
+                >
+                  {category}
+                </span>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
           className="mt-10 grid gap-4 rounded-lg border border-border bg-background p-5 shadow-sm lg:grid-cols-[1fr_auto]"
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.45 }}
@@ -84,10 +117,10 @@ export function Products() {
           whileInView={{ opacity: 1, y: 0 }}
         >
           <div>
-            <h3 className="text-lg font-bold text-foreground">Need a recurring supply plan?</h3>
+            <h3 className="text-lg font-bold text-foreground">Need advice before ordering?</h3>
             <p className="mt-1 text-sm leading-6 text-muted-foreground">
-              Share your product list, volumes, preferred packaging, and destination. Gelagay can
-              help plan sourcing, documentation, and delivery cadence.
+              Share your use case, product list, volumes, preferred packaging, and destination.
+              Gelagay can help plan safe selection, sourcing, documentation, and delivery cadence.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[520px]">

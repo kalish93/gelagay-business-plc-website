@@ -42,8 +42,8 @@ export function FaqNewsletter() {
             Chemical supply updates for business buyers.
           </h2>
           <p className="mt-4 text-sm leading-6 text-white/75">
-            Receive product availability notes, procurement reminders, and safety-focused supply
-            updates from Gelagay.
+            Receive availability notes, procurement reminders, advisory insights, and safety-focused
+            supply updates from Gelagay.
           </p>
 
           <form className="mt-6 grid gap-3 sm:grid-cols-[1fr_auto]" onSubmit={handleSubscribe}>

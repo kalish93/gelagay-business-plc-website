@@ -13,11 +13,11 @@ import { Footer } from '@/components/footer';
 import { ScrollToTop } from '@/components/scroll-to-top';
 
 export const metadata = {
-  title: 'Gelagay Business PLC | Trusted Chemical Supply Solutions',
+  title: 'Gelagay Business PLC | Business Supply, Distribution & Advisory',
   description:
-    'Providing high-quality chemical products and reliable distribution services across Ethiopia. Trusted supplier for industrial, agricultural, laboratory, and commercial chemicals.',
+    'Business supply, sourcing, distribution, and advisory services across Ethiopia, with current specialization in chemical supply and chemical-use consultation.',
   keywords:
-    'chemical supplier, industrial chemicals, agricultural chemicals, laboratory chemicals, Ethiopia, chemical distribution',
+    'business supply Ethiopia, distribution services Ethiopia, chemical consultation, industrial chemicals, agricultural chemicals, laboratory chemicals, Ethiopia',
 };
 
 export default function Home() {

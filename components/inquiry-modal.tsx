@@ -81,9 +81,9 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
           >
             <div className="flex items-start justify-between border-b border-border bg-muted/40 p-5 sm:p-6">
               <div>
-                <p className="text-sm font-semibold text-secondary">Product inquiry</p>
+                <p className="text-sm font-semibold text-secondary">Solution inquiry</p>
                 <h3 id="inquiry-title" className="mt-1 text-2xl font-bold text-foreground">
-                  Request chemical supply details
+                  Contact Gelagay about this solution
                 </h3>
               </div>
               <button
@@ -144,14 +144,14 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
                     />
                   </label>
                   <label className="grid gap-2 text-sm font-medium text-foreground">
-                    Product Category
+                    Solution Area
                     <select
                       className="h-11 rounded-lg border border-border bg-background px-3 text-sm outline-none transition focus:border-primary focus:ring-3 focus:ring-primary/15"
                       defaultValue={product ?? ''}
                       name="product"
                       required
                     >
-                      <option value="">Select category</option>
+                      <option value="">Select solution area</option>
                       {products.map((item) => (
                         <option key={item.title} value={item.title}>
                           {item.title}
@@ -165,7 +165,7 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
                   <textarea
                     className="min-h-28 resize-none rounded-lg border border-border bg-background px-3 py-3 text-sm outline-none transition focus:border-primary focus:ring-3 focus:ring-primary/15"
                     name="message"
-                    placeholder="Tell us the chemical type, quantity, delivery location, and timeline."
+                    placeholder="Tell us the product, use case, advisory question, quantity, delivery location, and timeline."
                     required
                   />
                 </label>
@@ -181,4 +181,3 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
     </AnimatePresence>
   );
 }
-

@@ -65,7 +65,7 @@ export function Navigation() {
           </span>
           <span className="hidden leading-tight sm:block">
             <span className="block text-sm font-bold text-foreground">Gelagay Business PLC</span>
-            <span className="block text-xs text-muted-foreground">Chemical supply solutions</span>
+            <span className="block text-xs text-muted-foreground">Supply, distribution and advisory</span>
           </span>
         </button>
 
@@ -92,7 +92,7 @@ export function Navigation() {
             {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
           <Button className="h-10 gap-2 px-5" onClick={() => handleNavClick('#contact')}>
-            Request Quote
+            Contact
           </Button>
         </div>
 
@@ -137,7 +137,7 @@ export function Navigation() {
                 </button>
               ))}
               <Button className="mt-2 h-11" onClick={() => handleNavClick('#contact')}>
-                Request Quote
+                Contact
               </Button>
             </div>
           </motion.div>

@@ -30,9 +30,9 @@ export function Contact() {
     <section id="contact" className="bg-background px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
-          description="Tell us what you need, where it is going, and the timeline. Gelagay will respond with practical next steps."
+          description="Tell us what you need, where it is going, and whether you need supply, consultation, sourcing, or distribution support."
           eyebrow={sectionEyebrows.contact}
-          title="Start a chemical supply conversation."
+          title="Start a supply or advisory conversation."
         />
 
         <div className="mt-14 grid gap-8 lg:grid-cols-[0.86fr_1.14fr]">
@@ -129,13 +129,13 @@ export function Contact() {
             </div>
 
             <label className="mt-4 grid gap-2 text-sm font-medium text-foreground">
-              Product Requirement
+              Solution Requirement
               <select
                 className="h-11 rounded-lg border border-border bg-background px-3 text-sm outline-none transition focus:border-primary focus:ring-3 focus:ring-primary/15"
                 name="productRequirement"
                 required
               >
-                <option value="">Select product category</option>
+                <option value="">Select solution area</option>
                 {products.map((product) => (
                   <option key={product.title} value={product.title}>
                     {product.title}
@@ -149,7 +149,7 @@ export function Contact() {
               <textarea
                 className="min-h-36 resize-none rounded-lg border border-border bg-background px-3 py-3 text-sm outline-none transition focus:border-primary focus:ring-3 focus:ring-primary/15"
                 name="message"
-                placeholder="Product type, quantity, packaging, delivery location, and timeline."
+                placeholder="Product or service need, quantity, use case, delivery location, consultation questions, and timeline."
                 required
               />
             </label>

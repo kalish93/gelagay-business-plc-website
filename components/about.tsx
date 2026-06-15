@@ -14,19 +14,19 @@ const commitments = [
   {
     title: 'Mission',
     description:
-      'Deliver high-quality chemical products with dependable service, technical clarity, and long-term partnership value.',
+      'Deliver dependable supply, distribution, and advisory services that help Ethiopian businesses operate with confidence.',
     icon: Target,
   },
   {
     title: 'Vision',
     description:
-      "Become one of East Africa's most trusted chemical supply partners for industry, agriculture, and commerce.",
+      "Become one of East Africa's most trusted business supply and advisory partners across strategic growth sectors.",
     icon: Eye,
   },
   {
     title: 'Commitment',
     description:
-      'Maintain quality, safety, customer satisfaction, and responsible handling across every supply relationship.',
+      'Maintain quality, safety, customer satisfaction, and responsible guidance across every supply relationship.',
     icon: BadgeCheck,
   },
 ];
@@ -43,7 +43,7 @@ export function About() {
           whileInView={{ opacity: 1, x: 0 }}
         >
           <Image
-            alt="Gelagay Business chemical warehouse and distribution center"
+            alt="Gelagay Business supply, advisory, and distribution operations"
             className="object-cover"
             fill
             sizes="(min-width: 1024px) 45vw, 100vw"
@@ -77,13 +77,14 @@ export function About() {
               About Gelagay
             </span>
             <h2 className="text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
-              A dependable chemical supply partner for Ethiopian businesses.
+              A dependable business supply and advisory partner for Ethiopian companies.
             </h2>
             <p className="text-base leading-7 text-muted-foreground sm:text-lg">
-              Gelagay Business PLC is a trusted supplier of chemical products serving
-              industrial, agricultural, laboratory, and commercial sectors. We are committed
-              to delivering quality products, dependable service, and long-term business
-              partnerships.
+              Gelagay Business PLC supports industrial, agricultural, laboratory, and
+              commercial customers through sourcing, distribution, and practical advisory
+              services. Chemicals are our current specialized focus, and the company is
+              structured to expand into additional business sectors without losing its
+              commitment to quality, safety, and long-term partnerships.
             </p>
           </div>
 
@@ -109,7 +110,7 @@ export function About() {
           </div>
 
           <Button className="h-11 gap-2 px-5" onClick={() => scrollToSection('#safety')}>
-            View Safety Standards
+            View Advisory Standards
             <ArrowRight className="h-4 w-4" />
           </Button>
         </motion.div>
