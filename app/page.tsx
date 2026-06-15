@@ -13,11 +13,11 @@ import { Footer } from '@/components/footer';
 import { ScrollToTop } from '@/components/scroll-to-top';
 
 export const metadata = {
-  title: 'Gelagay Business PLC | Business Supply, Distribution & Advisory',
+  title: 'Gelagay Business PLC | Water Testing & Technical Services',
   description:
-    'Business supply, sourcing, distribution, and advisory services across Ethiopia, with current specialization in chemical supply and chemical-use consultation.',
+    'Water testing, training, technical services, testing kits, lab equipment, and reagents for industrial and laboratory customers in Ethiopia.',
   keywords:
-    'business supply Ethiopia, distribution services Ethiopia, chemical consultation, industrial chemicals, agricultural chemicals, laboratory chemicals, Ethiopia',
+    'water testing Ethiopia, boiler water testing, cooling tower service, RO technical service, wastewater testing, testing kits, lab equipment, reagents',
 };
 
 export default function Home() {

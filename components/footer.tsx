@@ -25,8 +25,8 @@ export function Footer() {
               </div>
             </div>
             <p className="max-w-sm text-sm leading-6 text-white/75">
-              Business supply, distribution, sourcing, and advisory solutions for Ethiopian
-              companies, with current specialization in chemicals.
+              Water testing, training, technical services, testing kits, lab equipment, and
+              reagents for Ethiopian facilities and laboratories.
             </p>
             <div className="mt-5 flex gap-3">
               {socialLinks.map((social) => {

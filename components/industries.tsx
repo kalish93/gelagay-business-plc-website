@@ -10,9 +10,9 @@ export function Industries() {
     <section className="bg-muted/40 px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
-          description="From production floors to research benches, Gelagay supports teams that need reliable chemical inputs and practical distribution."
+          description="From utility rooms to research benches, Gelagay supports teams that need reliable testing, training, lab inputs, and technical guidance."
           eyebrow={sectionEyebrows.industries}
-          title="Serving the sectors that keep Ethiopia moving."
+          title="Serving facilities and teams that depend on reliable water systems."
         />
 
         <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">

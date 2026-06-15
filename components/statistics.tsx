@@ -54,11 +54,11 @@ export function Statistics() {
           >
             <p className="text-sm font-semibold uppercase text-secondary">By the numbers</p>
             <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl">
-              Chemical distribution with measurable reach.
+              Technical service with measurable reach.
             </h2>
             <p className="mt-4 text-sm leading-6 text-white/75">
-              These placeholder metrics are structured for quick replacement with verified
-              operational data before launch.
+              These placeholder metrics are structured for quick replacement with verified service,
+              testing, and client data before launch.
             </p>
           </motion.div>
 

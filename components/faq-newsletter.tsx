@@ -39,11 +39,11 @@ export function FaqNewsletter() {
         >
           <p className="text-sm font-semibold uppercase text-secondary">Stay informed</p>
           <h2 className="mt-3 text-3xl font-bold leading-tight">
-            Chemical supply updates for business buyers.
+            Water testing and technical service updates.
           </h2>
           <p className="mt-4 text-sm leading-6 text-white/75">
-            Receive availability notes, procurement reminders, advisory insights, and safety-focused
-            supply updates from Gelagay.
+            Receive service notes, testing reminders, training updates, advisory insights, and
+            availability updates for kits, lab equipment, and reagents.
           </p>
 
           <form className="mt-6 grid gap-3 sm:grid-cols-[1fr_auto]" onSubmit={handleSubscribe}>

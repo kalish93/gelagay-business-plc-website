@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { InquiryModal } from '@/components/inquiry-modal';
 import {
   accentClasses,
-  chemicalCategories,
+  focusAreas,
   products,
   sectionEyebrows,
 } from '@/components/landing-data';
@@ -34,9 +34,9 @@ export function Products() {
     <section id="products" className="bg-muted/40 px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <SectionHeading
-          description="A future-ready services structure for companies that need dependable sourcing, documentation, advisory support, and distribution."
+          description="Focused technical support for facilities that need water testing, operator training, lab inputs, and practical service guidance."
           eyebrow={sectionEyebrows.products}
-          title="Solutions built around supply, advisory, and business continuity."
+          title="Technical services for water systems, testing, and laboratories."
         />
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -90,14 +90,14 @@ export function Products() {
         >
           <div className="grid gap-4 lg:grid-cols-[0.65fr_1.35fr] lg:items-center">
             <div>
-              <h3 className="text-lg font-bold text-foreground">Current chemical focus areas</h3>
+              <h3 className="text-lg font-bold text-foreground">Current technical focus areas</h3>
               <p className="mt-1 text-sm leading-6 text-muted-foreground">
-                These are the core categories Gelagay supports today while the company prepares
-                for broader business sectors.
+                These are the core areas Gelagay supports today while keeping room for other
+                technical and business sectors later.
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
-              {chemicalCategories.map((category) => (
+              {focusAreas.map((category) => (
                 <span
                   className="rounded-full border border-border bg-muted/60 px-3 py-2 text-xs font-semibold text-foreground"
                   key={category}
@@ -117,10 +117,10 @@ export function Products() {
           whileInView={{ opacity: 1, y: 0 }}
         >
           <div>
-            <h3 className="text-lg font-bold text-foreground">Need advice before ordering?</h3>
+            <h3 className="text-lg font-bold text-foreground">Need technical advice before deciding?</h3>
             <p className="mt-1 text-sm leading-6 text-muted-foreground">
-              Share your use case, product list, volumes, preferred packaging, and destination.
-              Gelagay can help plan safe selection, sourcing, documentation, and delivery cadence.
+              Share your system type, test requirements, current challenge, and timeline. Gelagay
+              can help plan testing, training, documentation, kits, reagents, and support inputs.
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-3 lg:min-w-[520px]">

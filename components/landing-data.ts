@@ -10,7 +10,6 @@ import {
   FlaskConical,
   Handshake,
   HeartPulse,
-  Lightbulb,
   Leaf,
   Mail,
   MapPin,
@@ -18,10 +17,7 @@ import {
   Phone,
   ShieldCheck,
   Target,
-  Truck,
   Utensils,
-  Warehouse,
-  Wheat,
 } from 'lucide-react';
 
 export const navItems = [
@@ -35,75 +31,75 @@ export const navItems = [
 
 export const products = [
   {
-    title: 'Chemical Supply & Distribution',
+    title: 'Industrial Water Testing',
     description:
-      'Industrial, laboratory, agricultural, water treatment, cleaning, and commercial chemicals supplied with dependable coordination.',
-    icon: Factory,
-    accent: 'navy',
-  },
-  {
-    title: 'Chemical Use Advisory & Consultation',
-    description:
-      'Practical guidance for product selection, safe use, storage, handling, application planning, and documentation needs.',
-    icon: Lightbulb,
-    accent: 'gold',
-  },
-  {
-    title: 'Import, Sourcing & Procurement',
-    description:
-      'Supplier coordination, sourcing support, import planning, and procurement assistance for specialized business inputs.',
-    icon: PackageCheck,
-    accent: 'green',
-  },
-  {
-    title: 'Technical Documentation Support',
-    description:
-      'Support with specifications, safety data sheets, handling guidance, batch records, and compliance-minded documentation.',
-    icon: ClipboardCheck,
+      'On-site and laboratory-supported testing for boiler, cooling tower, softener, RO, and wastewater systems.',
+    icon: Droplets,
     accent: 'blue',
   },
   {
-    title: 'Logistics & Business Support',
+    title: 'Training & Technical Services',
     description:
-      'Warehousing coordination, delivery planning, repeat-order scheduling, and distribution support across Ethiopian regions.',
-    icon: Truck,
+      'Practical training and technical guidance for operators, maintenance teams, and facility managers.',
+    icon: BookOpen,
     accent: 'gold',
   },
   {
-    title: 'Bulk Supply Programs',
+    title: 'Water Testing Kits',
     description:
-      'Volume supply, contract planning, packaging coordination, and predictable replenishment for business customers.',
-    icon: Warehouse,
+      'Testing kits and field-ready tools for routine water quality checks and operational monitoring.',
+    icon: ClipboardCheck,
+    accent: 'green',
+  },
+  {
+    title: 'Lab Equipment & Reagents',
+    description:
+      'Laboratory equipment, reagents, consumables, and support inputs for testing and quality control work.',
+    icon: FlaskConical,
+    accent: 'blue',
+  },
+  {
+    title: 'Boiler, Cooling & Softener Support',
+    description:
+      'Technical support for boiler water, cooling towers, water softeners, scale control, and system performance.',
+    icon: Factory,
+    accent: 'gold',
+  },
+  {
+    title: 'RO & Wastewater Support',
+    description:
+      'Service guidance for reverse osmosis, pretreatment, wastewater testing, troubleshooting, and monitoring.',
+    icon: ShieldCheck,
     accent: 'navy',
   },
   {
-    title: 'Future Sector Partnerships',
+    title: 'Specialty Treatment Inputs',
     description:
-      'A flexible platform for adding new supply, advisory, distribution, and commercial support services as Gelagay expands.',
-    icon: Target,
+      'Discreet support for sourcing water treatment inputs and other technical materials when projects require them.',
+    icon: PackageCheck,
     accent: 'green',
   },
 ];
 
-export const chemicalCategories = [
-  'Industrial chemicals',
-  'Laboratory chemicals',
-  'Agricultural chemicals',
-  'Water treatment chemicals',
-  'Cleaning and sanitizing chemicals',
-  'Commercial chemical inputs',
-  'Bulk chemical supply',
+export const focusAreas = [
+  'Boiler water',
+  'Cooling towers',
+  'Water softeners',
+  'Reverse osmosis',
+  'Wastewater',
+  'Testing kits',
+  'Lab equipment and reagents',
 ];
 
 export const features = [
   {
-    title: 'Quality-Assured Supply',
-    description: 'Products and services are supported by vetted suppliers, clear documentation, and traceability.',
+    title: 'Reliable Technical Service',
+    description: 'Testing, guidance, and support are delivered with clear documentation and practical follow-up.',
     icon: Award,
   },
   {
-    title: 'Reliable Supply Chain',
-    description: 'Procurement, storage, and dispatch planning built around dependable availability.',
+    title: 'Water System Know-How',
+    description: 'Focused support for boiler, cooling, softener, RO, and wastewater operations.',
     icon: PackageCheck,
   },
   {
@@ -118,19 +114,19 @@ export const features = [
   },
   {
     title: 'Expert Support',
-    description: 'Chemical-use consultation, product guidance, documentation support, and practical application recommendations.',
+    description: 'Technical consultation, test interpretation, product guidance, and practical application recommendations.',
     icon: ClipboardCheck,
   },
   {
     title: 'Customer-Centered Service',
-    description: 'Long-term supply partnerships shaped around each client operation and schedule.',
+    description: 'Long-term service relationships shaped around each client operation and schedule.',
     icon: Handshake,
   },
 ];
 
 export const industries = [
   { name: 'Manufacturing', icon: Factory },
-  { name: 'Agriculture', icon: Wheat },
+  { name: 'Other Sectors', icon: Target },
   { name: 'Water Treatment', icon: Droplets },
   { name: 'Laboratories', icon: FlaskConical },
   { name: 'Food Processing', icon: Utensils },
@@ -142,12 +138,12 @@ export const industries = [
 export const complianceItems = [
   {
     title: 'Quality Documentation',
-    description: 'Supplier records, product data sheets, and batch-level checks support accountable supply.',
+    description: 'Test records, service notes, supplier records, and product data sheets support accountable work.',
     icon: ClipboardCheck,
   },
   {
-    title: 'Safe Handling Procedures',
-    description: 'Storage guidance, labeling discipline, consultation, and handling practices are built into every order.',
+    title: 'Safe Handling Guidance',
+    description: 'Storage guidance, labeling discipline, consultation, and handling practices are included where materials are involved.',
     icon: ShieldCheck,
   },
   {
@@ -157,7 +153,7 @@ export const complianceItems = [
   },
   {
     title: 'Environmental Responsibility',
-    description: 'Responsible sourcing and safer chemical-use guidance help reduce operational risk.',
+    description: 'Responsible testing, treatment guidance, and safer material-use practices help reduce operational risk.',
     icon: Leaf,
   },
 ];
@@ -175,9 +171,9 @@ export const testimonials = [
   {
     name: 'Almaz Negussie',
     role: 'Operations Director',
-    company: 'Ethiopian Agricultural Solutions',
+    company: 'Addis Food Processing Group',
     testimonial:
-      'Their team understands seasonal demand and helps us plan chemical supply before the pressure arrives.',
+      'Their team helped us understand our water testing routine and improve monitoring for our utility systems.',
     image: '/testimonial-2.png',
     rating: 5,
   },
@@ -202,7 +198,7 @@ export const stats = [
 export const contactDetails = [
   {
     title: 'Address',
-    value: ['Addis Ababa, Ethiopia', 'Industrial and commercial supply office'],
+    value: ['Addis Ababa, Ethiopia', 'Industrial and technical services office'],
     icon: MapPin,
   },
   {
@@ -224,19 +220,19 @@ export const contactDetails = [
 
 export const faqs = [
   {
-    question: 'Is Gelagay only a chemical supplier?',
+    question: 'What does Gelagay currently focus on?',
     answer:
-      'Chemicals are the current core specialization, but Gelagay is structured as a business supply, distribution, sourcing, and advisory company that can expand into additional sectors.',
+      'Gelagay currently focuses on industrial water testing, operator training, technical services, water testing kits, lab equipment, and reagents.',
   },
   {
-    question: 'Do you provide consultation for chemical use?',
+    question: 'Do you provide training and technical support?',
     answer:
-      'Yes. Gelagay can advise on product selection, safe handling, storage, application planning, documentation needs, and practical use considerations.',
+      'Yes. Gelagay can support teams working with boiler water, cooling towers, softeners, RO systems, wastewater, testing routines, and safe material use.',
   },
   {
-    question: 'Can you help identify the right product for an application?',
+    question: 'Can you help identify the right test kit or reagent?',
     answer:
-      'Yes. Share the application, target volume, safety requirements, and delivery location, and our team will recommend suitable products or advisory next steps.',
+      'Yes. Share the system type, test parameters, operating conditions, and usage frequency, and the team can recommend suitable testing kits, reagents, or service next steps.',
   },
   {
     question: 'Do products and services include documentation?',
@@ -273,13 +269,13 @@ export const accentClasses = {
   },
 } as const;
 
-export const heroHighlights = ['Industrial', 'Laboratory', 'Agricultural', 'Commercial'];
+export const heroHighlights = ['Water Testing', 'Training', 'Technical Services', 'Lab Support'];
 
 export const sectionEyebrows = {
-  products: 'Business solutions',
+  products: 'Technical solutions',
   why: 'Partner advantage',
   industries: 'Industries served',
-  safety: 'Advisory, safety and compliance',
+  safety: 'Testing, safety and compliance',
   testimonials: 'Client confidence',
   contact: 'Contact Gelagay',
 };

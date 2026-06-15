@@ -65,7 +65,7 @@ export function Navigation() {
           </span>
           <span className="hidden leading-tight sm:block">
             <span className="block text-sm font-bold text-foreground">Gelagay Business PLC</span>
-            <span className="block text-xs text-muted-foreground">Supply, distribution and advisory</span>
+            <span className="block text-xs text-muted-foreground">Water testing and technical services</span>
           </span>
         </button>
 

@@ -4,25 +4,25 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gelagay.com'),
-  title: 'Gelagay Business PLC | Supply, Distribution & Advisory Solutions',
+  title: 'Gelagay Business PLC | Water Testing, Training & Technical Services',
   description:
-    'Ethiopian business supply, distribution, sourcing, and advisory company with current specialization in chemical products and chemical-use consultation.',
+    'Industrial water testing, training, technical services, testing kits, lab equipment, and reagents for boiler, cooling tower, softener, RO, and wastewater systems.',
   keywords: [
     'Gelagay Business PLC',
-    'business supply Ethiopia',
-    'distribution company Ethiopia',
-    'business advisory Ethiopia',
-    'chemical consultation Ethiopia',
-    'chemical supplier Ethiopia',
-    'industrial chemicals',
-    'laboratory chemicals',
-    'agricultural chemicals',
-    'chemical distribution Addis Ababa',
+    'water testing Ethiopia',
+    'boiler water testing',
+    'cooling tower water testing',
+    'RO technical service',
+    'wastewater testing',
+    'water testing kits Ethiopia',
+    'lab equipment Ethiopia',
+    'laboratory reagents Ethiopia',
+    'technical training Ethiopia',
   ],
   openGraph: {
-    title: 'Gelagay Business PLC | Supply, Distribution & Advisory Solutions',
+    title: 'Gelagay Business PLC | Water Testing, Training & Technical Services',
     description:
-      'Business supply, sourcing, distribution, and advisory services with current expertise in chemical products and safe chemical use.',
+      'Technical water services, testing kits, lab equipment, reagents, training, and advisory support for Ethiopian facilities.',
     images: ['/hero.png'],
     locale: 'en_US',
     siteName: 'Gelagay Business PLC',
