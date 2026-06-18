@@ -200,17 +200,17 @@ export const stats = [
 export const contactDetails = [
   {
     title: 'Address',
-    value: ['Addis Ababa, Ethiopia', 'Industrial and technical services office'],
+    value: ['Addis Ababa, Ethiopia', 'Shiro Meda, Gelagay Business PLC'],
     icon: MapPin,
   },
   {
     title: 'Phone',
-    value: ['+251 11 123 4567', '+251 912 345 678'],
+    value: ['+251 94 030 1838', '+251 961 063 629'],
     icon: Phone,
   },
   {
     title: 'Email',
-    value: ['info@gelagay.et', 'sales@gelagay.et'],
+    value: ['info@gelagay.com', 'sales@gelagay.com'],
     icon: Mail,
   },
   {

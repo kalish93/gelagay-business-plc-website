@@ -1,29 +1,47 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, MapPinned } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ExternalLink, MapPinned } from 'lucide-react';
 import { useState } from 'react';
 
 import { contactDetails, products, sectionEyebrows } from '@/components/landing-data';
 import { SectionHeading } from '@/components/section-heading';
 import { Button } from '@/components/ui/button';
+import { submitContactForm } from '@/lib/contact-form';
 
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSent, setIsSent] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.currentTarget;
+    const formData = new FormData(form);
 
     setIsSubmitting(true);
     setIsSent(false);
+    setSubmitError('');
 
-    window.setTimeout(() => {
+    try {
+      await submitContactForm({
+        fullName: String(formData.get('fullName') ?? ''),
+        companyName: String(formData.get('companyName') ?? ''),
+        email: String(formData.get('email') ?? ''),
+        phone: String(formData.get('phone') ?? ''),
+        solutionArea: String(formData.get('solutionArea') ?? ''),
+        message: String(formData.get('message') ?? ''),
+        source: 'Contact section',
+        website: String(formData.get('website') ?? ''),
+      });
+
       setIsSubmitting(false);
       setIsSent(true);
       form.reset();
-    }, 900);
+    } catch {
+      setIsSubmitting(false);
+      setSubmitError('Message could not be sent. Please email info@gelagay.com directly.');
+    }
   };
 
   return (
@@ -65,13 +83,33 @@ export function Contact() {
               })}
             </div>
 
-            <div className="min-h-[250px] overflow-hidden rounded-lg border border-border bg-muted shadow-sm">
-              <div className="flex h-full min-h-[250px] flex-col items-center justify-center bg-[linear-gradient(135deg,rgba(10,35,66,0.12),rgba(212,160,23,0.12))] p-6 text-center">
-                <MapPinned className="mb-4 h-10 w-10 text-primary" />
-                <h3 className="text-lg font-bold text-foreground">Google Maps Placeholder</h3>
-                <p className="mt-2 max-w-sm text-sm leading-6 text-muted-foreground">
-                  Embed the verified Addis Ababa office map here when the final address is confirmed.
-                </p>
+            <div className="overflow-hidden rounded-lg border border-border bg-muted shadow-sm">
+              <div className="relative min-h-[290px]">
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps?q=9.063917%2C38.761056&output=embed"
+                  title="Gelagay Business PLC location map"
+                />
+              </div>
+              <div className="flex flex-col gap-3 border-t border-border bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex gap-3">
+                  <MapPinned className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+                  <div>
+                    <h3 className="text-sm font-bold text-foreground">Current service location</h3>
+                    <p className="text-sm text-muted-foreground">Ethiopia, Addis Ababa, Shiro meda</p>
+                  </div>
+                </div>
+                <a
+                  className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 text-sm font-semibold text-foreground transition hover:bg-muted"
+                  href="https://www.google.com/maps/search/?api=1&query=9.063917%2C38.761056"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Open Map
+                  <ExternalLink className="h-4 w-4" />
+                </a>
               </div>
             </div>
           </motion.div>
@@ -132,7 +170,7 @@ export function Contact() {
               Solution Requirement
               <select
                 className="h-11 rounded-lg border border-border bg-background px-3 text-sm outline-none transition focus:border-primary focus:ring-3 focus:ring-primary/15"
-                name="productRequirement"
+                name="solutionArea"
                 required
               >
                 <option value="">Select solution area</option>
@@ -154,10 +192,24 @@ export function Contact() {
               />
             </label>
 
+            <input
+              aria-hidden="true"
+              className="hidden"
+              name="website"
+              tabIndex={-1}
+              type="text"
+            />
+
             {isSent && (
               <div className="mt-4 flex items-center gap-2 rounded-lg border border-emerald-500/25 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-300">
                 <CheckCircle2 className="h-4 w-4" />
-                Request captured. Connect this form to email or CRM before launch.
+                Message sent. Gelagay will receive it at info@gelagay.com.
+              </div>
+            )}
+
+            {submitError && (
+              <div className="mt-4 rounded-lg border border-destructive/25 bg-destructive/10 px-3 py-2 text-sm text-destructive">
+                {submitError}
               </div>
             )}
 

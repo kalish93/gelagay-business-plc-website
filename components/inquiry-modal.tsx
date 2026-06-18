@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 
 import { products } from '@/components/landing-data';
 import { Button } from '@/components/ui/button';
+import { submitContactForm } from '@/lib/contact-form';
 
 type InquiryModalProps = {
   open: boolean;
@@ -16,11 +17,13 @@ type InquiryModalProps = {
 export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSent, setIsSent] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   useEffect(() => {
     if (!open) {
       setIsSubmitting(false);
       setIsSent(false);
+      setSubmitError('');
     }
   }, [open]);
 
@@ -44,14 +47,32 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
     };
   }, [onOpenChange, open]);
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setIsSubmitting(true);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
 
-    window.setTimeout(() => {
+    setIsSubmitting(true);
+    setSubmitError('');
+
+    try {
+      await submitContactForm({
+        fullName: String(formData.get('fullName') ?? ''),
+        companyName: String(formData.get('companyName') ?? ''),
+        email: String(formData.get('email') ?? ''),
+        solutionArea: String(formData.get('solutionArea') ?? ''),
+        message: String(formData.get('message') ?? ''),
+        source: 'Solution inquiry modal',
+        website: String(formData.get('website') ?? ''),
+      });
+
       setIsSubmitting(false);
       setIsSent(true);
-    }, 800);
+      form.reset();
+    } catch {
+      setIsSubmitting(false);
+      setSubmitError('Message could not be sent. Please email info@gelagay.com directly.');
+    }
   };
 
   return (
@@ -103,8 +124,7 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
                 </div>
                 <h4 className="text-xl font-bold text-foreground">Inquiry received</h4>
                 <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-muted-foreground">
-                  This demo form is ready for backend integration. The final site can route inquiries
-                  to email, CRM, or WhatsApp.
+                  Your message has been sent to info@gelagay.com. Gelagay can follow up by email.
                 </p>
                 <Button className="mt-6 h-11 px-5" onClick={() => onOpenChange(false)}>
                   Close
@@ -117,7 +137,7 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
                     Full Name
                     <input
                       className="h-11 rounded-lg border border-border bg-background px-3 text-sm outline-none transition focus:border-primary focus:ring-3 focus:ring-primary/15"
-                      name="name"
+                      name="fullName"
                       placeholder="Your name"
                       required
                     />
@@ -126,7 +146,7 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
                     Company
                     <input
                       className="h-11 rounded-lg border border-border bg-background px-3 text-sm outline-none transition focus:border-primary focus:ring-3 focus:ring-primary/15"
-                      name="company"
+                      name="companyName"
                       placeholder="Company name"
                       required
                     />
@@ -148,7 +168,7 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
                     <select
                       className="h-11 rounded-lg border border-border bg-background px-3 text-sm outline-none transition focus:border-primary focus:ring-3 focus:ring-primary/15"
                       defaultValue={product ?? ''}
-                      name="product"
+                      name="solutionArea"
                       required
                     >
                       <option value="">Select solution area</option>
@@ -169,6 +189,18 @@ export function InquiryModal({ open, product, onOpenChange }: InquiryModalProps)
                     required
                   />
                 </label>
+                <input
+                  aria-hidden="true"
+                  className="hidden"
+                  name="website"
+                  tabIndex={-1}
+                  type="text"
+                />
+                {submitError && (
+                  <div className="rounded-lg border border-destructive/25 bg-destructive/10 px-3 py-2 text-sm text-destructive">
+                    {submitError}
+                  </div>
+                )}
                 <Button className="h-11 w-full gap-2 text-sm" disabled={isSubmitting} type="submit">
                   {isSubmitting ? 'Preparing inquiry...' : 'Submit Inquiry'}
                   {!isSubmitting && <ArrowRight className="h-4 w-4" />}

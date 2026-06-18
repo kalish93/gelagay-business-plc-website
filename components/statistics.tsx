@@ -57,8 +57,8 @@ export function Statistics() {
               Water and laboratory support with measurable reach.
             </h2>
             <p className="mt-4 text-sm leading-6 text-white/75">
-              These placeholder metrics are structured for quick replacement with verified service,
-              testing, and client data before launch.
+              These metrics highlight Gelagay&apos;s growing capacity across service, testing,
+              product support, and client relationships.
             </p>
           </motion.div>
 
